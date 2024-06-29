@@ -8,20 +8,20 @@ const indice__info = document.querySelectorAll(".indice__informacion");
 // Paso 2: Funciones
 indice.forEach(elemento => {
     elemento.addEventListener("click", () => {
-        const item = indice.closest(".indice");
+        //const item = elemento.closest(".indice__informacion");
+        let item = elemento.nextElementSibling;
 
         cerrarTodos();
 
-        item.classList.toggle("active");
+        item.style ="display: block";
     })
 });
 
 
 // Paso 3: Ejecutar código
-
-indice[0].click();
-function cerrarTodos() {
-    indice.forEach(elemento=> {
-        elemento.classList.remove("active");
+function cerrarTodos(){
+    indice__info.forEach(index => {
+        index.style = "display: none";
     })
+    
 }

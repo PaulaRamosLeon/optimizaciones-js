@@ -15,15 +15,15 @@ body {
 
 .acordeon {
     display: flex;
-    height: 60vh;
-    width: 15vw;
+    width: 15em;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
     gap: 10px;
-    box-shadow: 0 8px 12px red;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     background-color: #E8E8E8;
+    padding: 1em;
 }
 
 .cajaindice, .indice {
@@ -31,10 +31,16 @@ body {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     padding: 10px;
     background-color: #E8E8E8;
-}
+    width: 100%;
 
+}
+.cajaindice {
+
+    transition: height 3s;
+}
 .indice__informacion {
     padding: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
+    
 }
