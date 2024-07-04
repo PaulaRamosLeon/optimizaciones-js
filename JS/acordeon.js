@@ -1,7 +1,5 @@
 // Paso 1: Declarar variables
 
-const acordeon = document.querySelector(".acordeon");
-const caja = document.querySelectorAll(".cajaindice");
 const indice = document.querySelectorAll(".indice");
 const indice__info = document.querySelectorAll(".indice__informacion");
 
@@ -13,15 +11,15 @@ indice.forEach(elemento => {
 
         cerrarTodos();
 
-        item.style ="display: block";
+        item.style = "height: 3em";
     })
 });
 
 
 // Paso 3: Ejecutar código
-function cerrarTodos(){
+function cerrarTodos() {
     indice__info.forEach(index => {
-        index.style = "display: none";
+        index.style = "height: 0px";
     })
-    
+
 }
