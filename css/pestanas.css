@@ -8,33 +8,55 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: center;    
+    align-items: center;
     height: 100vh;
     background-color: #E8E8E8;
 }
 
 .caja {
-    border: 10px solid white;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px gray;
-    width: 50vw;
-    height: 30vh;
     gap: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-content: space-around;
-    padding: 25px;
+    padding: 0.5em 2em 7em 2em;
+    box-shadow: 8px 8px 12px rgba(106, 101, 101, 0.575), -8px -8px 12px rgba(255, 255, 255, 0.733);
+}
 
+.opcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.parrafos {
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .titulo {
     background-color: #E8E8E8;
     height: 50px;
-    width: 100px;
+    padding: 0em 3em;
     margin: 15px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px gray;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.titulo:hover {
+    box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.activo {
+    box-shadow: inset 0 8px 12px rgba(0, 0, 0, 0.1);
 }

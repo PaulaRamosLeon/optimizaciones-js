@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     border-radius: 10px;
     gap: 10px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 8px 8px 12px rgba(106, 101, 101, 0.575), -8px -8px 12px rgba(255, 255, 255, 0.733);
     background-color: #E8E8E8;
     padding: 1em;
 }
@@ -29,7 +29,7 @@ body {
 .cajaindice,
 .indice {
     border-radius: 10px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 8px rgba(106, 101, 101, 0.575), -5px -5px 8px rgba(255, 255, 255, 0.733);
     padding: 10px;
     background-color: #E8E8E8;
     width: 100%;

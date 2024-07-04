@@ -13,12 +13,48 @@ body {
     background-color: #E8E8E8;
 }
 
-.caja {
-    border: 10px solid white;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px gray;
+.contenedor {
+    position: relative;
 }
 
-img {
+.segundacaja {
+    position: absolute;
+    top: -25vh;
+    left: -25vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.imagen {
     height: 20vh;
+    border: 10px solid white;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px gray;
+    transition: height 0.5s, border 0.5s;
+}
+
+.primeraimagen {
+z-index: 10;
+position: relative;
+}
+
+.primeraimagen:hover {
+    height: 10vh;
+    border: 5px solid white;
+}
+.segundaimagen {
+    height: 50vh;
+    z-index: 1;
+}
+
+.cerrar {
+    border: none;
+    padding: 5px;
+    border-radius: 25%;
+    height: 2em;
+    width: 2em;
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.549);
 }
